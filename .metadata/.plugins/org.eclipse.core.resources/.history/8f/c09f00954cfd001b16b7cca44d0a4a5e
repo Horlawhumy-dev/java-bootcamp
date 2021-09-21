@@ -1,0 +1,20 @@
+package com.HaroffCode;
+
+import java.util.Scanner;
+
+public class Factorial {
+	public static void main(String[] args) {
+		Object result = null;
+		try (Scanner input = new Scanner(System.in)) {
+			int num = input.nextInt();
+			if(num > 0) {
+				for(int i = 1; i<num; i++) {
+					result = num + i;
+				}
+			}else {
+				System.out.println("invalid number supplied");
+			}
+			System.out.println(result)
+		}
+	}
+}

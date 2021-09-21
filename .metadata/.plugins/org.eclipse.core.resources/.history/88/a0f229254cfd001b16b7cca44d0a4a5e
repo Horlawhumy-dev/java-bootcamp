@@ -1,0 +1,17 @@
+package com.HaroffCode;
+
+import java.util.Scanner;
+
+public class Factorial {
+	public static void main(String[] args) {
+		Object result = null;
+		Scanner input = new Scanner(System.in);
+		int num = input.nextInt();
+		while(num != 0) {
+			for(int i = 1; i<num; i++) {
+				result = num + i;
+			}
+		}
+		System.out.println(result);
+	}
+}
